@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajkot Gujarat Police</title>
+    <link rel="stylesheet" href="css/E-FIR.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/logo.jpg" alt="Rajkot Police">
+        </div>
+        <ul>
+            <li class="item"><a href="home.html">Home</a></li>
+            <li class="item"><a href="aboutus.html">About Us</a></li>
+            <li class="item"><a href="gallary.html">Gallary</a></li>
+            <li class="item"><a href="php/carsInfo.php">CarsInfo</a></li>
+            <li class="item"><a href="E-FIR.html">E-FIR</a></li>
+            <li class="item"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <form action="php/register.php" name="frm1" method="post">
+        <div class="container">
+          <h1>Register For E-FIR</h1>
+        </br>
+           
+     
+     
+         <p><h4>Enter Your Credentials to create an account</h4></p>  
+        </br> 
+     
+    <p>
+          <label><b>First Name</b></label>
+          <input type="text" placeholder="Enter Your First Name"
+          name="q1" id="q1" required>
+           
+          <label><b>Last name</b></label>
+          <input type="text" placeholder="Enter Your Last Name"
+          name="q2" id="q2" required>     
+           
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username"
+           name="q3" id="q3" required>
+           
+          <label><b>Date of Birth  </b></label>
+           <input type="text" placeholder="yyyy-mm-dd"
+           name="q4" id="q4" required>
+           
+          <label><b>Gender</b></label>
+          <input type="text" placeholder="Enter Gender"
+            name="q5" id="q5" required>
+           
+          <label><b>E-mail</b></label>
+          <input type="text" placeholder="Enter your e-mail"
+              name="q6" id="q6" required>
+           
+          <label><b>Mobile no.</b></label>
+          <input type="text" placeholder="Enter your phone number"
+             name="q7" id="q7" required>
+           
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password"
+             name="q8" id="q8" required>
+           
+          <label><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password"
+             name="q9" id="q9" required>
+        </p>
+     
+     
+          
+     
+           <button type="submit" class="registerbtn"
+             name="b1" id="b1" onclick="alert('feedback received')">
+             Register
+           </button>
+      </div>
+       
+      <div class="container signin">
+           
+     
+    <p>Already have an account?
+            <a href="login.html">Sign in</a>
+         </p>
+     
+     
+      </div>
+    </form>
+</body>
+</html>

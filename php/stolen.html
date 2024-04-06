@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Administrative</title>
+	<link rel="stylesheet" type="text/css" href="stolen.css">
+</head>
+<body>
+	<header>
+		<h1>Administrative</h1>
+		<nav>
+			<ul>
+				<li><a href="../home.html">Home</a></li>
+				<li><a href="firreport.php">FIR Report</a></li>
+				<li><a href="stolen.html">Stolen Car Entry</a></li>
+				<li><a href="imageUpload.html">Upload Image</a></li>
+				<li><a href="#">Registered User</a></li>
+				<li><a href="admin.php">Logout</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Stolen Car Entry Form</h2>
+			<form action="stolen.php" method="post">
+				<label for="carid">Car Id :</label>
+				<input type="text" id="carid" name="carid" required>
+				<label for="noplate">Number Plate :</label>
+				<input type="text" id="noplate" name="noplate" required>
+				<label for="brand">Brand :</label>
+				<input type="text" id="brand" name="brand" required>
+				<label for="Registration">Registration :</label>
+				<input type="text" id="registration" name="registration" required>
+				<input type="submit" name="submit" value="Submit">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Police Department Admin Site</p>
+	</footer>
+</body>
+</html>

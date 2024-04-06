@@ -1,0 +1,93 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Varaibles */
+:root{
+    --navbar-height: 59px;
+}
+
+/*navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+/*Navigation Bar: Logo and image */
+#logo{
+    margin:-100px 34px;
+
+}
+
+#logo img{
+    margin: 3px 3px;
+    height: 59px;
+}
+
+/*Navigation Bar: List Styling*/
+ul{
+    display: flex;
+
+}
+
+#navbar::before{
+    content:"";
+    background-color: silver;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#navbar ul li{
+    color: black;
+    list-style: none;
+    font-size: 1.3 rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:white;
+    background-color: black;
+}
+
+/* Gallary Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-image: url(bg1.jpg);
+  }
+  
+  .gallery-item {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  h2{
+    font-size: 40px;
+    padding: 15px;
+    text-align: center;
+    background-image: url(bg1.jpg);
+  }
+
+ 
+  

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <title>Administrative</title>
+    <link rel="stylesheet" type="text/css" href="stolen.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <style>
+        .container {
+    max-width: 600px; /* Adjust this according to your design */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.file-field {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    background-color: #2196F3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-path-wrapper {
+    margin-left: 10px;
+}
+
+.file-path {
+    width: calc(100% - 40px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn[type=submit] {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.btn[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Administrative</h1>
+        <nav>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="firreport.php">FIR Report</a></li>
+                <li><a href="stolen.html">Stolen Car Entry</a></li>
+                <li><a href="imageUpload.html">Upload Image</a></li>
+                <li><a href="#">Registered User</a></li>
+                <li><a href="admin.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="container">
+    <h2>Upload Image</h2>
+    <form id="imageUploadForm" action="upload.php" method="post" enctype="multipart/form-data">
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>Choose Image</span>
+                <input type="file" name="imageFile" id="imageFile">
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Upload
+            <i class="material-icons right">cloud_upload</i>
+        </button>
+    </form>
+</div>
+</body>
+</html>

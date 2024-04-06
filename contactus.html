@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajkot Gujarat Police</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/logo.jpg" alt="Rajkot Police">
+        </div>
+        <ul>
+          <li class="item"><a href="home.html">Home</a></li>
+          <li class="item"><a href="aboutus.html">About Us</a></li>
+          <li class="item"><a href="gallary.php">Gallary</a></li>
+          <li class="item"><a href="php/carsInfo.php">CarsInfo</a></li>
+          <li class="item"><a href="E-FIR.html">E-FIR</a></li>
+          <li class="item"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <form action="php/contacttable.php"  method="post">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="Email">Email</label>
+          <input type="text" id="Email" name="Email" placeholder="Your Email">
+      
+          <label for="address">Address</label>
+          <select id="address" name="address">
+            <option value="nana mova">Nana Mova</option>
+            <option value="Greenland chowk">GreenLand Chowk</option>
+            <option value="Gondal chokdi">Gondal Chokdi</option>
+          </select>
+      
+          <label for="subject">Comments</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <button class="btn btn-lg btn-warning" type="submit"
+            id="b1" name="b1" onclick="alert('feedback received')">
+                Submit
+          </button>
+      
+        </form>
+      </div>
+</body>
+</html>

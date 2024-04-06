@@ -1,0 +1,120 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Varaibles */
+:root{
+    --navbar-height: 59px;
+}
+
+/*navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+/*Navigation Bar: Logo and image */
+#logo{
+    margin:-100px 34px;
+
+}
+
+#logo img{
+    margin: 3px 3px;
+    height: 59px;
+}
+
+/*Navigation Bar: List Styling*/
+ul{
+    display: flex;
+
+}
+
+#navbar::before{
+    content:"";
+    background-color: silver;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#navbar ul li{
+    color: black;
+    list-style: none;
+    font-size: 1.3 rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:white;
+    background-color: black;
+}
+
+/* form CSS */
+body{
+    background-color:white;
+  }
+
+*{
+    box-sizing: border-box;
+  }
+
+/* Add padding to containers */
+.container{
+    padding: 16px;
+    background-color: #D3d3d3;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4169E1;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition-duration: 0.4sec;
+}
+.registerbtn:hover {
+   opacity: 1;
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+/* Set a grey background color and center
+the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
